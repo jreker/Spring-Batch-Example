@@ -5,6 +5,11 @@ This is a simple example of how to use spring batch with Chunks and one Tasklet 
 This spring batch application reads all entries from the "verkehrsstraftaten.csv" file in the java resource folder.
 It filters all entries lower than 100€ via the item processor. The last step is the write into the mariadb.
 
+## Prerequisites
+- Java 17
+- Maven
+- Docker (Compose)
+
 ## Run
 Start Database container from the folder "Docker"
 ```
