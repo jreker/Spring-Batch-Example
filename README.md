@@ -11,10 +11,12 @@ It filters all entries lower than 100€ via the item processor. The last step i
 - Docker (Compose)
 
 ## Run
-Start Database container from the folder "Docker"
+1. Start Database container from the folder "Docker"
 ```
 docker-compose up
 ```
+2. Compile and run the Java App.
+
 ## Sample Data
 The source of the sample data is GOVDATA:
 https://www.govdata.de/web/guest/suchen/-/details/bussgelder-fliessender-verkehr-2021-der-stadt-aachen
