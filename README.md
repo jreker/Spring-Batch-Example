@@ -22,6 +22,21 @@ docker-compose up
 ```
 2. Compile and run the Java App.
 
+## Changelog
+
+### [2.0.0] - 2026-02-22
+- Upgraded Spring Boot 3.0.0 → 4.0.3
+- Upgraded Spring Batch 5 → 6.0.2
+- Upgraded MySQL Connector/J 5.1.40 → 9.6.0 (new `com.mysql:mysql-connector-j` artifact)
+- Migrated all Spring Batch 6 package renames (`org.springframework.batch.item.*` → `...infrastructure.item.*` etc.)
+- Replaced removed `JobExecutionListenerSupport` with `JobExecutionListener` interface
+- Switched to `spring-boot-starter-batch-jdbc` for JDBC-backed job repository
+
+### [1.0.0] - 2023-01-01
+- Initial release
+- Spring Boot 3.0.0 with Spring Batch 5
+- CSV to MySQL batch job with chunk processing and tasklet step
+
 ## Security
 
 A full codebase security review was conducted (February 2026). No vulnerabilities were found.
