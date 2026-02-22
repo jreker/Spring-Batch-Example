@@ -22,6 +22,16 @@ docker-compose up
 ```
 2. Compile and run the Java App.
 
+## Security
+
+A full codebase security review was conducted (February 2026). No vulnerabilities were found.
+
+- SQL queries use parameterized statements — no SQL injection risk
+- No web endpoints, sessions, or authentication logic — minimal attack surface
+- No unsafe deserialization, command execution, or XML parsing
+- CSV input is loaded from a static classpath resource — no path traversal risk
+- No sensitive data is written to logs
+
 ## Sample Data
 The source of the sample data is GOVDATA:
 https://www.govdata.de/web/guest/suchen/-/details/bussgelder-fliessender-verkehr-2021-der-stadt-aachen
